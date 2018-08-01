@@ -1,4 +1,150 @@
-
 @import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/scss/_variables.scss";
+
+html,
+body,
+div,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+html {
+	overflow: auto;
+
+}
+.row {
+	margin-right: 0;
+}
+.footnote {
+	font-size: 9px!important;
+	line-height: .8rem;
+	font-weight: lighter;
+	margin: 10px 0 40px;
+}
+/******************* section_1 **********************/
+
+.section_1 {
+	background: url(/static/img/logo-circle.png) center top no-repeat;
+    background-size: cover;
+	min-height: 577px;
+	.container-fluid {
+		padding-top: 55px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+    	justify-content: space-around;
+    	h1 {
+    		font-size: 32px;
+    	}
+    	img {
+    		width: 50%;
+    	}
+    	
+	}
+}
+/******************* section_2 **********************/
+.section_2 {
+	background: url(/static/img/img_minotaur.png) right bottom no-repeat;
+    background-size: contain;
+    padding-bottom: 64%;
+	h2 {
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 12px;
+		margin: 0;
+	}
+	img {
+		width: 52%;
+	}
+	.task {
+		background: url(/static/img/img_knight.png)left bottom no-repeat;
+    	background-size: 12em;
+    	.description {
+    		margin-top: 20px; 
+    		p {
+    			font-size: 14px;
+    		}   
+    	}
+    	h2 {
+    		margin-top: 40px;
+    	}
+	}
+	.data {
+		margin-top: 60px;
+		background: url(/static/img/img_thinker.png)right top no-repeat;
+    	background-size: 87%;
+	}
+	.resources {
+		margin-top: 60px;
+		background: url(/static/img/img_mermaid.png)left center no-repeat;
+    	background-size: 100%;
+	}
+	.resolvation {
+		margin-top: 60px;
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+}
+/******************* section_3 **********************/
+.section_3 {
+	background: url(/static/img/img_horses.png) left bottom no-repeat;
+    background-size: 90%;
+    padding-bottom: 85%;
+    h2 {
+		font-size: 52px;
+		text-transform: uppercase;	
+	}
+	h5 {
+		margin-top: 40px;
+	    text-transform: uppercase;
+	    font-weight: bolder;
+	    font-size: 14px;
+	}
+	p {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.footnote {
+		font-size: 9px!important;
+		line-height: .8rem;
+		font-weight: lighter;
+		margin: 10px 0 40px;
+	}
+	.result {
+		margin-top: 80px;
+		h2 {
+			letter-spacing: 1.8px;
+		}
+	}
+	.total {
+		margin-top: 60px;
+	}
+	.budget {
+		margin-top: 80px;
+		.contact {
+			display: block;
+			margin: 20px 0 0;
+			background: #ff5400;
+		    width: 100%;
+		    padding: 20px 65px;
+		    border-radius: 17px;
+			text-transform: uppercase;
+			box-shadow:0px 2px 0px 0px rgba(87, 29, 0, 0.86);
+			text-align: center;
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
 
