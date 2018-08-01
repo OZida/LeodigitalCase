@@ -29,6 +29,7 @@ html {
     background-size: cover;
 	min-height: 577px;
 	.container-fluid {
+		height: 290px;	
 		padding-top: 55px;
 		display: flex;
 		flex-direction: column;
@@ -37,8 +38,12 @@ html {
     	h1 {
     		font-size: 32px;
     	}
+    	p {
+    		font-size: 18px;
+    		font-weight: bold;
+    	}
     	img {
-    		width: 50%;
+    		width: 10em;
     	}
     	
 	}
@@ -63,7 +68,7 @@ html {
 		background: url(/static/img/img_knight.png)left bottom no-repeat;
     	background-size: 12em;
     	.description {
-    		margin-top: 20px; 
+    		margin: 20px 0 40px;
     		p {
     			font-size: 14px;
     		}   
@@ -96,7 +101,8 @@ html {
     padding-bottom: 85%;
     h2 {
 		font-size: 52px;
-		text-transform: uppercase;	
+		text-transform: uppercase;
+		font-weight: bold;	
 	}
 	h5 {
 		margin-top: 40px;
@@ -135,11 +141,95 @@ html {
 			text-transform: uppercase;
 			box-shadow:0px 2px 0px 0px rgba(87, 29, 0, 0.86);
 			text-align: center;
+			font-weight: bold;
 		}
 
 	}
 }
+@media screen and (min-width: 577px) {
+	/******************* section_1 **********************/
+	.section_1 {
+		min-height: 977px;
+		.container-fluid {
+			height: 510px;
+   			padding-top: 105px;
+	    	h1 {
+	    		font-size: 62px;
+	    	}
+	    	p {
+	    		font-size: 38px;
+	    	}
+	    	img {
+	    		width: 20em;
+	    	}
+	    	
+		}
+	}
+	/******************* section_2 **********************/
+	.section_2 {
+		background-size: 125%;
+		padding-bottom: 82%;
+		h2 {
+			font-size: 57px;
+		}
+		p {
+			font-size: 24px;
+		}
+		.task {
+	    	background-size: 20em;
+	    	.description {
+	    		margin: 60px 0 120px;
+	    		p {
+	    			font-size: 28px;
+	    		}   
+	    	}
+		}
+		.data {
+			margin-top: 120px;
+			background: url(/static/img/img_thinker.png)right top no-repeat;
+	    	background-size: 87%;
+		}
+		.resources {
+			margin-top: 120px;
+			background: url(/static/img/img_mermaid.png)left center no-repeat;
+	    	background-size: 100%;
+		}
+		.resolvation {
+			margin-top: 120px;
+			p {
+				margin-bottom: 1.2rem;
+			}
+		}
+	}
+	/******************* section_3 **********************/
+	.section_3 {
+		background: url(/static/img/img_horses.png) left bottom no-repeat;
+	    background-size: 90%;
+	    padding-bottom: 85%;
+	    h2 {
+			font-size: 112px;
+			letter-spacing: 5px;
+		}
+		h5 {
+		    font-size: 24px;
+		}
+		p {
+			font-size: 24px;
+		}
+		.result {
+			h2 {
+				letter-spacing: 12px;
+			}
+		}
+		.budget {
+			.contact {
+			    padding: 50px 65px;
+				
+			}
 
+		}
+	}
+}
 
 
 
