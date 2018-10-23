@@ -1,0 +1,666 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/_variables.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
+@font-face {
+  font-family: Avenir\ Next;
+  src:url(../../static/fonts/AvenirNext-Regular.woff);
+}
+
+html,
+body,
+div,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+html {
+	font-family: Avenir\ Next,sans-serif;
+	overflow: auto;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	text-decoration: none!important;
+	font-family: Avenir\ Next,sans-serif;
+}
+p {
+	font-family: Avenir\ Next,sans-serif;
+}
+h1, h2, h5 {
+	font-family: Avenir\ Next,sans-serif;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+}
+.container-fluid:after, .row:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+.subtitle {
+	color: #a5a5a5;
+	text-transform: uppercase;
+	line-height: 32px;
+}
+.wrapper {
+	max-width: 100%;
+}
+.main_content {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+}
+.footnote {
+	font-family: Avenir\ Next,sans-serif;
+	font-size: 9px!important;
+	line-height: .8rem;
+	font-weight: lighter;
+	margin: 10px 0 40px!important;
+}
+/******************* section_1 **********************/
+.section_1 {
+	background: url(../../static/img/moto_circle.png) center top no-repeat;
+	background-size: contain;
+	min-height: 385px;
+	margin-top: 60px;
+	.container-fluid {
+		height: 110px;
+    padding-top: 35px;
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			height: 100%;
+			h1 {
+				font-size: 28px;
+				margin: 0;
+			}
+			p {
+				font-size: 21px;
+				margin: 0;
+			}
+		}	
+	}
+}
+/******************* section_2 **********************/
+.section_2 {
+	h2 {
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		line-height: 34px;
+	}
+	p {
+		font-size: 16px;
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+	img {
+		width: 52%;
+	}
+	.task {
+		background: url(../../static/img/moto_horseman.png) center bottom no-repeat;
+    background-size: 15em;
+    padding-bottom: 21em;
+		.description {
+			margin: 40px 0 20px;
+		}
+	}
+	.data {
+		background: url(../../static/img/moto_zeus.png) center bottom no-repeat;
+    background-size: 16em;
+    margin-top: 65px;
+    padding-bottom: 24em;
+	}
+	.resources {
+		background: url(../../static/img/moto_proletarian.png) center bottom no-repeat;
+    background-size: 16em;
+    margin-top: 65px;
+    padding-bottom: 18em;
+	}
+	.resolvation {
+		background: url(../../static/img/moto_cock.png) center bottom no-repeat;
+    background-size: 16em;
+    margin-top: 65px;
+    padding-bottom: 22em;
+	}
+}
+/******************* section_3 **********************/
+.section_3 {
+	background: url(../../static/img/img_horses.png) left bottom no-repeat;
+	background-size: 80%;
+	padding-bottom: 90%;
+  h2 {
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		line-height: 34px;
+	}
+	h5 {
+		margin-top: 40px;
+		font-size: 18px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 1rem;
+	}
+	.footnote {
+		margin: 10px 0 0!important;
+	}
+	.result {
+		margin-top: 80px;
+		h2 {
+			letter-spacing: 1px;
+		}
+		.result_ppc {
+			h5 {
+				margin-top: 20px;
+			}
+		}
+	}
+	.total {
+		margin-top: 60px;
+		.row {
+			margin-top: 40px;
+		}
+		.row:nth-of-type(1) {
+			margin-top: 20px;
+		}
+	}
+	.budget {
+		margin-top: 80px;
+		.contact {
+			cursor: pointer;
+			display: block;
+			margin: 20px 0 0;
+			background: transparent;
+			width: 213px;
+			padding: 16px 0 13px;
+			border-radius: 76px;
+			text-transform: uppercase;
+			/*box-shadow: 0px 2px 0px 0px rgba(87, 29, 0, 0.86);*/
+			text-align: center;
+			font-size: 16px;
+			float: left;	
+			font-weight: bold;
+			color: #000;	
+			border: .125rem solid #000;
+			transition: .1s ease-out;
+			&:hover {
+				color: #ea8825;
+				border: .125rem solid #ea8825;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 576px) {
+
+	.section_1 {
+		min-height: 650px;
+		margin-top: 90px;
+		.container-fluid {
+			height: 175px;
+			padding-top: 50px;
+   		.wrapper {
+				h1 {
+					font-size: 60px;
+				}
+				p {
+					font-size: 38px;
+				}
+			}
+		}
+	}
+
+	.section_2 {
+		h2 {
+			font-size: 36px;
+			line-height: 42px;
+		}
+		p {
+			font-size: 18px;
+		}
+		.task {
+			background: url(../../static/img/moto_horseman.png) left bottom no-repeat;
+	    background-size: 18em;
+	    padding-bottom: 0;
+			.description {
+				margin: 60px 0 18%; 
+			}
+		}
+		.data {
+			background: url(../../static/img/moto_zeus.png) right bottom no-repeat;
+			background-size: 20em;
+			padding-bottom: 0;
+			padding-top: 3em;
+			margin-top: 65px;
+		}
+		.resources {
+			background: url(../../static/img/moto_proletarian.png) -7em center no-repeat;
+			background-size: 25em;
+			padding-bottom: 3em;
+			padding-top: 3em;
+			margin-top: 80px;
+		}
+		.resolvation {
+			background: url(../../static/img/moto_cock.png) center bottom no-repeat;
+			background-size: 21em;
+			padding-bottom: 28em;
+			margin-top: 80px;
+		}
+	}
+
+	.section_3 {
+		padding-bottom: 85%;
+		h2 {
+			font-size: 32px;
+		}
+		p {
+			font-size: 18px;
+		}
+		h5 {
+			margin-top: 60px;
+		  font-size: 20px;
+		}
+		.result_ppc {
+			h5 {
+				margin-top: 30px;
+			}
+		}
+		.total {
+			margin-top: 100px;
+			p {
+				margin: 10px 0;
+			}
+		}
+		.budget {
+			margin-top: 150px;
+			.contact {
+				padding: 16px 0;
+				font-size: 18px;
+    		width: 60%;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) {
+
+	.section_1 {
+		min-height: 940px;
+		margin-top: 95px;
+		.container-fluid {
+			height: 260px;
+   		padding-top: 90px;
+   		.wrapper {
+				h1 {
+					font-size: 70px;
+				}
+				p {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+
+	.section_2 {
+		h2 {
+			font-size: 36px;
+		}
+		p {
+			font-size: 18px;
+		}
+		.task {
+			background: url(../../static/img/moto_horseman.png) left bottom no-repeat;
+			background-size: 26em;
+			padding-top: 9em;
+	    .description {
+				margin: 60px 0 5% 50%; 
+			}
+		}
+		.data {
+			background: url(../../static/img/moto_zeus.png) right bottom no-repeat;
+			background-size: 22em;
+			padding-top: 8em;
+			padding-bottom: 2em;
+			margin-top: 65px;
+		}
+		.resources {
+			background: url(../../static/img/moto_proletarian.png) left bottom no-repeat;
+			background-size: 24em;
+			padding-top: 8em;
+			padding-bottom: 3em;
+			margin-top: 65px;
+		}
+		.resolvation {
+			background: url(../../static/img/moto_cock.png)	right center no-repeat;
+	    background-size: 25em;
+	    padding-bottom: 0;
+	    margin-top: 100px;
+		}
+	}
+
+	.section_3 {
+		h2 {
+			font-size: 36px;
+			line-height: 42px;
+		}
+		.budget {
+			text-align: right;
+			.contact {
+				font-size: 16px;
+    		width: 65%;
+    		float: right;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 992px) {
+
+	.section_1 {
+		background-size: contain;
+		height: 1002px;
+		margin-top: 95px;
+		.container-fluid {
+			height: 280px;
+			padding-top: 85px;
+			.wrapper {
+				h1 {
+					font-size: 90px;
+				}
+			}
+		}
+	}
+
+	.section_2 {
+		h2 {
+			font-size:48px;
+			margin-bottom: 20px;
+			line-height: 52px;
+		}
+		p {
+			font-size: 24px;
+		}
+		img {
+			width: 52%;
+		}
+		.task {
+			background: url(../../static/img/moto_horseman.png) -2em bottom no-repeat;
+			background-size: 37em;
+			margin-top: 60px;
+			padding-top: 11em;
+			.description {
+				margin: 60px 0 5% 50%;
+			}
+		}
+		.data {
+			background: url(../../static/img/moto_zeus.png) right bottom no-repeat;
+			background-size: 30em;
+			margin-top: 60px;
+			padding-top: 11em;
+			padding-bottom: 0;
+
+		}
+		.resources {
+			background: url(../../static/img/moto_proletarian.png) left bottom no-repeat;
+			background-size: 32em;
+			margin-top: 60px;
+			padding-top: 10em;
+			padding-bottom: 8em;
+		}
+		.resolvation {
+			margin-top: 120px;
+			background: url(../../static/img/moto_cock.png) right center no-repeat;
+    	background-size: 32em;
+			h2{
+				margin-bottom: 60px;
+			}
+			p {
+				margin-bottom: 1.6rem;
+			}
+		}
+	}
+
+	.section_3 {
+		background-size: 52%;
+    padding-bottom: 15%;
+		h2 {
+			font-size:48px;
+			margin-bottom: 20px;
+			line-height: 52px;
+		}
+		h5 {
+			margin-top: 0;
+		}
+		p {
+			font-size: 24px;
+		}
+		.screen {
+			margin-top: 50px;
+		}
+		.result_ppc, .result_seo, .result_seoAndPpc, .result_3groups, .result_1group, .reference_mass {
+			margin-top: 70px;
+		}
+		.result_ppc {
+			margin-top: 30px;
+		}
+		.total {
+			h2 {
+				width: 50%;
+			}
+			.flex-lg-row-reverse {
+				margin-top: 60px;
+				p {
+					margin: 0 0 20px;
+				}
+			}
+			.row:nth-of-type(1) {
+		    margin-top: 40px;
+			}
+		}
+		.budget {
+			margin-top: 120px;
+			h2 {
+				text-align: right;
+			}
+			.contact {
+				width: 65%;
+				padding: 30px 0;
+				margin: 150px 0 0 36%;
+				text-align: center;
+				font-size:19px;		
+			}
+		}
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.wrapper {
+		max-width: 1320px;
+		margin: 0 auto;
+	}
+
+	.section_1 {
+		margin-top: 95px;
+		.container-fluid {	
+			padding-top: 65px;
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+				h1 {
+					font-size: 130px;
+				}
+				p {
+					font-size: 48px;
+				}
+			}	
+		}
+	}
+
+	.section_2 {
+		h2 {
+			font-size: 48px;
+		}
+		p {
+			font-size: 24px;
+			margin: 0;
+		}
+		img {
+			width: 52%;
+		}
+		.task {
+	    background: url(../../static/img/moto_horseman.png) left bottom no-repeat;
+    	background-size: 40em;
+			padding-top: 14em;
+    	padding-bottom: 10em;
+			.description {
+				margin: 40px 0 5% 50%;  
+			}
+		}
+		.data {
+			background: url(../../static/img/moto_zeus.png) right bottom no-repeat;
+			background-size: 34em;
+			margin-top: 0;
+			padding-top: 13em;
+    	padding-bottom: 17em;
+		}
+		.resources {
+			background: url(../../static/img/moto_proletarian.png) left bottom no-repeat;
+			background-size: 37em;
+    	padding-top: 14em;
+    	padding-bottom: 11em;
+    	margin: 0;
+		}
+		.resolvation {
+			margin-top: 120px;
+			background-size: 38em;
+		}
+	}
+
+	.section_3 {
+		background: url(../../static/img/img_horses.png) left bottom no-repeat;
+		background-size: 45%;
+    padding-bottom: 15%;
+	  h2 {
+			font-size: 48px;	
+		}
+		h5 {
+			font-weight: bolder;
+			font-size: 26px;
+		}
+		p {
+			font-size: 24px;
+			margin-bottom: 5px;
+		}
+		.screen {
+			margin-top: 75px;
+		}
+		.footnote {
+			font-size: 9px!important;
+			line-height: .8rem;
+			font-weight: lighter;
+			margin: 10px 0 0!important;
+		}
+		.result {
+			margin-top: 120px;
+		}
+		.total {
+			margin-top: 120px;
+			.row {
+				margin-top: 70px;
+			}
+		}
+		.budget {
+			padding-top: 240px;
+			margin: 0;
+		}
+	}
+}
+@media only screen and (min-width: 1600px) {
+	.section_1 {
+		.container-fluid {	
+			padding-top: 45px;
+			.wrapper {
+				h1 {
+					font-size: 130px;
+				}
+			}	
+		}
+	}
+	.section_2 {
+    .task {
+    	padding-bottom: 16em;
+    	background-size: 44em;
+		}
+  }
+}
+
+.overlay {
+	/*background-color: rgba(0, 0, 0, 0.7);*/
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	opacity: 0;
+	/*opacity: 1;*/
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	/*visibility: visible;*/
+	z-index: 99999;
+	transition: all .6s;
+	background: url(../../static/img/fancybox_overlay.png);
+}
+.popup {
+	background-color: #e0dfdc;
+	display: inline-block;
+	left: 50%;
+	opacity: 0;
+	/*opacity: 1;*/
+	padding: 20px;
+	width: 80%;
+	max-width: 740px;
+	height: 605px;
+	position: fixed;
+	text-align: justify;
+	top: 50%;
+	visibility: hidden;
+	/*visibility: visible;*/
+	z-index: 999999;
+	transform: translate(-50%, -50%);
+	transition: opacity .5s, top .5s;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	border-radius: 4px;
+/*	overflow: auto;
+  -webkit-overflow-scrolling: touch; */
+}
+.popup_wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.popup iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.close_popup  {
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+  position: absolute;
+  background: url(../../static/img/fancybox_sprite.png) no-repeat; 
+}
+
+
+
+
+
